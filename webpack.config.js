@@ -4,7 +4,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: / \.tsx?$/,
+        test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/
       }
@@ -17,6 +17,6 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    inline: false
+    inline: true
   }
 };
